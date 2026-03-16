@@ -20,7 +20,7 @@ if not st.session_state.authenticated:
 
     st.title("🔐")
 
-    password = st.text_input("비밀번호를 입력하세요", type="password")
+    password = st.text_input("비밀번호", type="password")
 
     if st.button("입장"):
         if password == PASSWORD:
@@ -90,7 +90,7 @@ else:
     st.write(f"문제 {index+1} / {total}")
 
     # 종료 버튼
-    if st.button("🛑 퀴즈 종료", use_container_width=True):
+    if st.button("퀴즈 종료", use_container_width=True):
         st.session_state.quiz_end = True
         st.rerun()
 
@@ -137,7 +137,7 @@ else:
         else:
             st.error(f"오답입니다! 정답: {answer}")
 
-        if st.button("다음 문제", use_container_width=True):
+        if st.button("next", use_container_width=True):
 
             st.session_state.index += 1
             st.session_state.answered = False
