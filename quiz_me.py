@@ -109,10 +109,10 @@ else:
 
         col1, col2 = st.columns(2)
 
-        if col1.button("⭕ O", use_container_width=True):
+        if col1.button("⭕", use_container_width=True):
             user = "O"
 
-        elif col2.button("❌ X", use_container_width=True):
+        elif col2.button("❌", use_container_width=True):
             user = "X"
 
         else:
