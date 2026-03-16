@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # 비밀번호 설정
-PASSWORD = "1214"
+PASSWORD = "0317"
 
 # 인증 상태 초기화
 if "authenticated" not in st.session_state:
