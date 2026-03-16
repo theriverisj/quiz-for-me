@@ -18,7 +18,7 @@ if "authenticated" not in st.session_state:
 # 로그인 화면
 if not st.session_state.authenticated:
 
-    st.title("🔐 퀴즈 접속")
+    st.title("🔐")
 
     password = st.text_input("비밀번호를 입력하세요", type="password")
 
@@ -31,7 +31,7 @@ if not st.session_state.authenticated:
 
     st.stop()
 
-st.title("📱OX quiz")
+st.title("0317 OX quiz")
 
 # 엑셀 불러오기
 df = pd.read_excel("min3.xlsx", header=None)
